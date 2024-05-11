@@ -2,6 +2,11 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
+  function handleClick() {
+    return console.log(
+      "You´ve clicked me with the handleClick function inside the App component!"
+    );
+  }
   return (
     <>
       <Button
@@ -9,7 +14,7 @@ export default function App() {
         backgroundColor="black"
         disabled={false}
         text="click me!"
-        // onClick={handleClick}
+        onClick={handleClick}
       />
       <Button
         color="white"
@@ -27,14 +32,10 @@ export default function App() {
   );
 }
 
-function Button({ color, isDisabled, backgroundColor, text }) {
-  function handleClick() {
-    return console.log("Adding a click event!");
-  }
-
+function Button({ onClick, color, isDisabled, backgroundColor, text }) {
   return (
     <button
-      onClick={handleClick}
+      onClick={onClick}
       type="button"
       disabled={isDisabled}
       style={{ color: color, backgroundColor: backgroundColor }}
