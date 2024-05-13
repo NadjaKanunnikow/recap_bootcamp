@@ -8,6 +8,7 @@ export default function App() {
       <Button>No, I am the first!</Button>
       <Button>Liar, I was there first!</Button>
       <Button>Na Na Na! I`m sure we will find a solution😌</Button>
+      <Button>I am the second!</Button>
     </main>
   );
 }
@@ -25,21 +26,19 @@ function Button({ children }) {
 // export default function App() {
 //   return (
 //     <main>
-//       <Button first="I`m the first button!" />
-//       <Button second="No, I am the first!" />
-//       <Button third="Liar, I was there first!" />
-//       <Button fourth="Na Na Na! I`m sure we will find a solution😌" />
+//       <Button buttonText="I`m the first button!" />
+//       <Button buttonText="No, I am the first!" />
+//       <Button buttonText="Liar, I was there first!" />
+//       <Button buttonText="Na Na Na! I`m sure we will find a solution😌" />
+//       <Button buttonText="I am the second!" />
 //     </main>
 //   );
 // }
 
-// function Button({ first, second, third, fourth }) {
+// function Button({ buttonText }) {
 //   return (
 //     <button className="button" type="button">
-//       {first}
-//       {second}
-//       {third}
-//       {fourth}
+//       {buttonText}
 //     </button>
 //   );
 // }
